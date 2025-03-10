@@ -55,11 +55,11 @@ export function FieldBosses(){
                         </div>
                     </div>
 
-                    <button onClick={scrollPrev} className='bg-[#171717] flex items-center justify-center rounded-full shadow-lg w-12 h-12 absolute left-1 -translate-y-1/2 -translate-x-1/2 top-1/2'>
+                    <button onClick={scrollPrev} className='bg-[#171717] flex items-center justify-center rounded-full shadow-lg w-12 h-12 absolute left-1 -translate-y-1/2 -translate-x-1/2 top-1/2 cursor-pointer hover:bg-[#222]'>
                         <ChevronLeft className='w-8 h-8 text-gray-300'/>
                     </button>
 
-                    <button onClick={scrollNext} className='bg-[#171717] flex items-center justify-center rounded-full shadow-lg w-12 h-12 absolute -right-11 -translate-y-1/2 -translate-x-1/2 top-1/2'>
+                    <button onClick={scrollNext} className='bg-[#171717] flex items-center justify-center rounded-full shadow-lg w-12 h-12 absolute -right-11 -translate-y-1/2 -translate-x-1/2 top-1/2 cursor-pointer hover:bg-[#222]'>
                         <ChevronRight className='w-8 h-8 text-gray-300'/>
                     </button>
 

@@ -33,9 +33,9 @@ export function Howtouse(){
         <form className="w-[500px] relative mt-4">
           <div className="relative">
             <input className="w-full p-4 rounded-full bg-[#171717] text-center focus:placeholder:opacity-0" type="search" placeholder="Search Boss"  onChange={(e) => handleSearch(e)}/>
-            <button className="absolute right-1 top-1/2 -translate-y-1/2 p-4 bg-[#0a0a0a] rounded-full">
+            <span className="absolute right-1 top-1/2 -translate-y-1/2 p-4  rounded-full">
               <Search />
-            </button>
+            </span>
           </div>
 
           {
