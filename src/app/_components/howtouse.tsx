@@ -32,7 +32,7 @@ export function Howtouse(){
         <p className="mt-2 text-lg">Choose the boss that you want to learn about his mechanics and enjoy it</p>
         <form className="w-[500px] relative mt-4">
           <div className="relative">
-            <input className="w-full p-4 rounded-full bg-[#171717] text-center" type="search" placeholder="Search Boss" onChange={(e) => handleSearch(e)}/>
+            <input className="w-full p-4 rounded-full bg-[#171717] text-center focus:placeholder:opacity-0" type="search" placeholder="Search Boss"  onChange={(e) => handleSearch(e)}/>
             <button className="absolute right-1 top-1/2 -translate-y-1/2 p-4 bg-[#0a0a0a] rounded-full">
               <Search />
             </button>
@@ -44,7 +44,7 @@ export function Howtouse(){
 
                   {
                       activeSearch.map(boss => (
-                        <a className="text-center p-2 hover:bg-[#222] rounded-lg" href={`/${encodeURIComponent(boss.name.toLowerCase())}`} key={boss.name}>{boss.name}</a>
+                        <a className="text-center p-2 hover:bg-[#222] rounded-lg" href={`/${encodeURIComponent(boss.name.toLowerCase().replace(/\s+/g, "-"))}`} key={boss.name}>{boss.name}</a>
                       ))
                   }
 

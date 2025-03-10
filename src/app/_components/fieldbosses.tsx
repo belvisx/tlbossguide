@@ -12,9 +12,6 @@ export function FieldBosses(){
         loop: false,
         align: "start",
         slidesToScroll: 1,
-        breakpoints:{
-            "(min-width: 768px)": {slidesToScroll:3}
-        }
     })
 
     function scrollPrev(){
